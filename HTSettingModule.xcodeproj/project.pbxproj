@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0155C7102A735D6400170661 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C70F2A735D6400170661 /* AppDelegate.m */; };
+		0155C7132A735D6400170661 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C7122A735D6400170661 /* SceneDelegate.m */; };
+		0155C7162A735D6400170661 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C7152A735D6400170661 /* ViewController.m */; };
+		0155C7192A735D6400170661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0155C7172A735D6400170661 /* Main.storyboard */; };
+		0155C71B2A735D6800170661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0155C71A2A735D6800170661 /* Assets.xcassets */; };
+		0155C71E2A735D6800170661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0155C71C2A735D6800170661 /* LaunchScreen.storyboard */; };
+		0155C7212A735D6800170661 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C7202A735D6800170661 /* main.m */; };
+		0155C74E2A735D8F00170661 /* HTFamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C72A2A735D8E00170661 /* HTFamilyViewController.m */; };
+		0155C74F2A735D8F00170661 /* ZQFamilyAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C72E2A735D8E00170661 /* ZQFamilyAccountModel.m */; };
+		0155C7502A735D8F00170661 /* HTFamilyMemberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C7312A735D8E00170661 /* HTFamilyMemberTableViewCell.m */; };
+		0155C7512A735D8F00170661 /* ZQFamilyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C7332A735D8E00170661 /* ZQFamilyManager.m */; };
+		0155C7522A735D8F00170661 /* HTFamilyQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C7342A735D8E00170661 /* HTFamilyQuestionViewController.m */; };
+		0155C7532A735D8F00170661 /* HTFamilyMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C7352A735D8E00170661 /* HTFamilyMemberViewController.m */; };
+		0155C7542A735D8F00170661 /* HTFamilyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C7362A735D8E00170661 /* HTFamilyTableViewCell.m */; };
+		0155C7552A735D8F00170661 /* HTAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C73C2A735D8E00170661 /* HTAboutViewController.m */; };
+		0155C7562A735D8F00170661 /* ZQSettingControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C73D2A735D8E00170661 /* ZQSettingControllerManager.m */; };
+		0155C7572A735D8F00170661 /* ZQSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C73F2A735D8E00170661 /* ZQSettingViewController.m */; };
+		0155C7582A735D8F00170661 /* HTFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C7412A735D8E00170661 /* HTFeedbackViewController.m */; };
+		0155C7592A735D8F00170661 /* HTWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C7422A735D8E00170661 /* HTWebViewController.m */; };
+		0155C75A2A735D8F00170661 /* ZQSetupListActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C7432A735D8E00170661 /* ZQSetupListActionManager.m */; };
+		0155C75B2A735D8F00170661 /* ZQSetupListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C7442A735D8E00170661 /* ZQSetupListCell.m */; };
+		0155C75C2A735D8F00170661 /* ZQSetupListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C7452A735D8E00170661 /* ZQSetupListController.m */; };
+		0155C75D2A735D8F00170661 /* HTLoginPointManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C7462A735D8E00170661 /* HTLoginPointManager.m */; };
+		0155C75E2A735D8F00170661 /* ZQSettingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C7482A735D8E00170661 /* ZQSettingHeaderView.m */; };
+		0155C75F2A735D8F00170661 /* ZQAccountTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0155C74D2A735D8E00170661 /* ZQAccountTools.m */; };
+		98999812D15856F98B234BA8 /* Pods_HTSettingModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70D6CF6359E4859D7DB832E /* Pods_HTSettingModule.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0155C70B2A735D6400170661 /* HTSettingModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTSettingModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0155C70E2A735D6400170661 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0155C70F2A735D6400170661 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0155C7112A735D6400170661 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		0155C7122A735D6400170661 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		0155C7142A735D6400170661 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0155C7152A735D6400170661 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0155C7182A735D6400170661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0155C71A2A735D6800170661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0155C71D2A735D6800170661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0155C71F2A735D6800170661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0155C7202A735D6800170661 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0155C7292A735D8E00170661 /* HTFamilyMemberTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTFamilyMemberTableViewCell.h; sourceTree = "<group>"; };
+		0155C72A2A735D8E00170661 /* HTFamilyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTFamilyViewController.m; sourceTree = "<group>"; };
+		0155C72B2A735D8E00170661 /* ZQFamilyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQFamilyManager.h; sourceTree = "<group>"; };
+		0155C72C2A735D8E00170661 /* HTFamilyQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTFamilyQuestionViewController.h; sourceTree = "<group>"; };
+		0155C72D2A735D8E00170661 /* HTFamilyMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTFamilyMemberViewController.h; sourceTree = "<group>"; };
+		0155C72E2A735D8E00170661 /* ZQFamilyAccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQFamilyAccountModel.m; sourceTree = "<group>"; };
+		0155C72F2A735D8E00170661 /* HTFamilyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTFamilyTableViewCell.h; sourceTree = "<group>"; };
+		0155C7302A735D8E00170661 /* HTFamilyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTFamilyViewController.h; sourceTree = "<group>"; };
+		0155C7312A735D8E00170661 /* HTFamilyMemberTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTFamilyMemberTableViewCell.m; sourceTree = "<group>"; };
+		0155C7322A735D8E00170661 /* ZQFamilyAccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQFamilyAccountModel.h; sourceTree = "<group>"; };
+		0155C7332A735D8E00170661 /* ZQFamilyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQFamilyManager.m; sourceTree = "<group>"; };
+		0155C7342A735D8E00170661 /* HTFamilyQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTFamilyQuestionViewController.m; sourceTree = "<group>"; };
+		0155C7352A735D8E00170661 /* HTFamilyMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTFamilyMemberViewController.m; sourceTree = "<group>"; };
+		0155C7362A735D8E00170661 /* HTFamilyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTFamilyTableViewCell.m; sourceTree = "<group>"; };
+		0155C7382A735D8E00170661 /* HTLoginPointManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTLoginPointManager.h; sourceTree = "<group>"; };
+		0155C7392A735D8E00170661 /* ZQSetupListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQSetupListCell.h; sourceTree = "<group>"; };
+		0155C73A2A735D8E00170661 /* ZQSetupListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQSetupListController.h; sourceTree = "<group>"; };
+		0155C73B2A735D8E00170661 /* ZQSetupListActionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQSetupListActionManager.h; sourceTree = "<group>"; };
+		0155C73C2A735D8E00170661 /* HTAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTAboutViewController.m; sourceTree = "<group>"; };
+		0155C73D2A735D8E00170661 /* ZQSettingControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQSettingControllerManager.m; sourceTree = "<group>"; };
+		0155C73E2A735D8E00170661 /* ZQSettingHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQSettingHeaderView.h; sourceTree = "<group>"; };
+		0155C73F2A735D8E00170661 /* ZQSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQSettingViewController.m; sourceTree = "<group>"; };
+		0155C7402A735D8E00170661 /* ZQAccountTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQAccountTools.h; sourceTree = "<group>"; };
+		0155C7412A735D8E00170661 /* HTFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTFeedbackViewController.m; sourceTree = "<group>"; };
+		0155C7422A735D8E00170661 /* HTWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTWebViewController.m; sourceTree = "<group>"; };
+		0155C7432A735D8E00170661 /* ZQSetupListActionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQSetupListActionManager.m; sourceTree = "<group>"; };
+		0155C7442A735D8E00170661 /* ZQSetupListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQSetupListCell.m; sourceTree = "<group>"; };
+		0155C7452A735D8E00170661 /* ZQSetupListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQSetupListController.m; sourceTree = "<group>"; };
+		0155C7462A735D8E00170661 /* HTLoginPointManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTLoginPointManager.m; sourceTree = "<group>"; };
+		0155C7472A735D8E00170661 /* HTAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTAboutViewController.h; sourceTree = "<group>"; };
+		0155C7482A735D8E00170661 /* ZQSettingHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQSettingHeaderView.m; sourceTree = "<group>"; };
+		0155C7492A735D8E00170661 /* ZQSettingControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQSettingControllerManager.h; sourceTree = "<group>"; };
+		0155C74A2A735D8E00170661 /* HTWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTWebViewController.h; sourceTree = "<group>"; };
+		0155C74B2A735D8E00170661 /* HTFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTFeedbackViewController.h; sourceTree = "<group>"; };
+		0155C74C2A735D8E00170661 /* ZQSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQSettingViewController.h; sourceTree = "<group>"; };
+		0155C74D2A735D8E00170661 /* ZQAccountTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQAccountTools.m; sourceTree = "<group>"; };
+		0155C7602A735E4700170661 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		86E6D5A0C341D463B6E6DF7D /* Pods-HTSettingModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTSettingModule.debug.xcconfig"; path = "Target Support Files/Pods-HTSettingModule/Pods-HTSettingModule.debug.xcconfig"; sourceTree = "<group>"; };
+		9968D1104CFF517EC47EAB13 /* Pods-HTSettingModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTSettingModule.release.xcconfig"; path = "Target Support Files/Pods-HTSettingModule/Pods-HTSettingModule.release.xcconfig"; sourceTree = "<group>"; };
+		C70D6CF6359E4859D7DB832E /* Pods_HTSettingModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTSettingModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0155C7082A735D6400170661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98999812D15856F98B234BA8 /* Pods_HTSettingModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0155C7022A735D6400170661 = {
+			isa = PBXGroup;
+			children = (
+				0155C70D2A735D6400170661 /* HTSettingModule */,
+				0155C70C2A735D6400170661 /* Products */,
+				1D10D7A371522CD7ABF968B9 /* Pods */,
+				DF0E8B7AD310690657D6C497 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0155C70C2A735D6400170661 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0155C70B2A735D6400170661 /* HTSettingModule.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0155C70D2A735D6400170661 /* HTSettingModule */ = {
+			isa = PBXGroup;
+			children = (
+				0155C7272A735D8E00170661 /* Classes */,
+				0155C70E2A735D6400170661 /* AppDelegate.h */,
+				0155C70F2A735D6400170661 /* AppDelegate.m */,
+				0155C7112A735D6400170661 /* SceneDelegate.h */,
+				0155C7122A735D6400170661 /* SceneDelegate.m */,
+				0155C7142A735D6400170661 /* ViewController.h */,
+				0155C7152A735D6400170661 /* ViewController.m */,
+				0155C7602A735E4700170661 /* PrefixHeader.pch */,
+				0155C7172A735D6400170661 /* Main.storyboard */,
+				0155C71A2A735D6800170661 /* Assets.xcassets */,
+				0155C71C2A735D6800170661 /* LaunchScreen.storyboard */,
+				0155C71F2A735D6800170661 /* Info.plist */,
+				0155C7202A735D6800170661 /* main.m */,
+			);
+			path = HTSettingModule;
+			sourceTree = "<group>";
+		};
+		0155C7272A735D8E00170661 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0155C7282A735D8E00170661 /* FamilyFile */,
+				0155C7372A735D8E00170661 /* Login */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0155C7282A735D8E00170661 /* FamilyFile */ = {
+			isa = PBXGroup;
+			children = (
+				0155C7292A735D8E00170661 /* HTFamilyMemberTableViewCell.h */,
+				0155C7312A735D8E00170661 /* HTFamilyMemberTableViewCell.m */,
+				0155C72D2A735D8E00170661 /* HTFamilyMemberViewController.h */,
+				0155C7352A735D8E00170661 /* HTFamilyMemberViewController.m */,
+				0155C72C2A735D8E00170661 /* HTFamilyQuestionViewController.h */,
+				0155C7342A735D8E00170661 /* HTFamilyQuestionViewController.m */,
+				0155C72F2A735D8E00170661 /* HTFamilyTableViewCell.h */,
+				0155C7362A735D8E00170661 /* HTFamilyTableViewCell.m */,
+				0155C7302A735D8E00170661 /* HTFamilyViewController.h */,
+				0155C72A2A735D8E00170661 /* HTFamilyViewController.m */,
+				0155C7322A735D8E00170661 /* ZQFamilyAccountModel.h */,
+				0155C72E2A735D8E00170661 /* ZQFamilyAccountModel.m */,
+				0155C72B2A735D8E00170661 /* ZQFamilyManager.h */,
+				0155C7332A735D8E00170661 /* ZQFamilyManager.m */,
+			);
+			path = FamilyFile;
+			sourceTree = "<group>";
+		};
+		0155C7372A735D8E00170661 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0155C7472A735D8E00170661 /* HTAboutViewController.h */,
+				0155C73C2A735D8E00170661 /* HTAboutViewController.m */,
+				0155C74B2A735D8E00170661 /* HTFeedbackViewController.h */,
+				0155C7412A735D8E00170661 /* HTFeedbackViewController.m */,
+				0155C7382A735D8E00170661 /* HTLoginPointManager.h */,
+				0155C7462A735D8E00170661 /* HTLoginPointManager.m */,
+				0155C74A2A735D8E00170661 /* HTWebViewController.h */,
+				0155C7422A735D8E00170661 /* HTWebViewController.m */,
+				0155C7402A735D8E00170661 /* ZQAccountTools.h */,
+				0155C74D2A735D8E00170661 /* ZQAccountTools.m */,
+				0155C7492A735D8E00170661 /* ZQSettingControllerManager.h */,
+				0155C73D2A735D8E00170661 /* ZQSettingControllerManager.m */,
+				0155C73E2A735D8E00170661 /* ZQSettingHeaderView.h */,
+				0155C7482A735D8E00170661 /* ZQSettingHeaderView.m */,
+				0155C74C2A735D8E00170661 /* ZQSettingViewController.h */,
+				0155C73F2A735D8E00170661 /* ZQSettingViewController.m */,
+				0155C73B2A735D8E00170661 /* ZQSetupListActionManager.h */,
+				0155C7432A735D8E00170661 /* ZQSetupListActionManager.m */,
+				0155C7392A735D8E00170661 /* ZQSetupListCell.h */,
+				0155C7442A735D8E00170661 /* ZQSetupListCell.m */,
+				0155C73A2A735D8E00170661 /* ZQSetupListController.h */,
+				0155C7452A735D8E00170661 /* ZQSetupListController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1D10D7A371522CD7ABF968B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86E6D5A0C341D463B6E6DF7D /* Pods-HTSettingModule.debug.xcconfig */,
+				9968D1104CFF517EC47EAB13 /* Pods-HTSettingModule.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF0E8B7AD310690657D6C497 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C70D6CF6359E4859D7DB832E /* Pods_HTSettingModule.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0155C70A2A735D6400170661 /* HTSettingModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0155C7242A735D6800170661 /* Build configuration list for PBXNativeTarget "HTSettingModule" */;
+			buildPhases = (
+				1027CE7BD9965D9EBCDEE103 /* [CP] Check Pods Manifest.lock */,
+				0155C7072A735D6400170661 /* Sources */,
+				0155C7082A735D6400170661 /* Frameworks */,
+				0155C7092A735D6400170661 /* Resources */,
+				A51A866FD284E6456D79F1FA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTSettingModule;
+			productName = HTSettingModule;
+			productReference = 0155C70B2A735D6400170661 /* HTSettingModule.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0155C7032A735D6400170661 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0155C70A2A735D6400170661 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 0155C7062A735D6400170661 /* Build configuration list for PBXProject "HTSettingModule" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0155C7022A735D6400170661;
+			productRefGroup = 0155C70C2A735D6400170661 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0155C70A2A735D6400170661 /* HTSettingModule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0155C7092A735D6400170661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0155C71E2A735D6800170661 /* LaunchScreen.storyboard in Resources */,
+				0155C71B2A735D6800170661 /* Assets.xcassets in Resources */,
+				0155C7192A735D6400170661 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1027CE7BD9965D9EBCDEE103 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HTSettingModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A51A866FD284E6456D79F1FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HTSettingModule/Pods-HTSettingModule-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HTSettingModule/Pods-HTSettingModule-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HTSettingModule/Pods-HTSettingModule-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0155C7072A735D6400170661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0155C75C2A735D8F00170661 /* ZQSetupListController.m in Sources */,
+				0155C7562A735D8F00170661 /* ZQSettingControllerManager.m in Sources */,
+				0155C75F2A735D8F00170661 /* ZQAccountTools.m in Sources */,
+				0155C7162A735D6400170661 /* ViewController.m in Sources */,
+				0155C7502A735D8F00170661 /* HTFamilyMemberTableViewCell.m in Sources */,
+				0155C7102A735D6400170661 /* AppDelegate.m in Sources */,
+				0155C7572A735D8F00170661 /* ZQSettingViewController.m in Sources */,
+				0155C75D2A735D8F00170661 /* HTLoginPointManager.m in Sources */,
+				0155C7212A735D6800170661 /* main.m in Sources */,
+				0155C7532A735D8F00170661 /* HTFamilyMemberViewController.m in Sources */,
+				0155C7542A735D8F00170661 /* HTFamilyTableViewCell.m in Sources */,
+				0155C7582A735D8F00170661 /* HTFeedbackViewController.m in Sources */,
+				0155C75E2A735D8F00170661 /* ZQSettingHeaderView.m in Sources */,
+				0155C7592A735D8F00170661 /* HTWebViewController.m in Sources */,
+				0155C7512A735D8F00170661 /* ZQFamilyManager.m in Sources */,
+				0155C7132A735D6400170661 /* SceneDelegate.m in Sources */,
+				0155C75B2A735D8F00170661 /* ZQSetupListCell.m in Sources */,
+				0155C7552A735D8F00170661 /* HTAboutViewController.m in Sources */,
+				0155C7522A735D8F00170661 /* HTFamilyQuestionViewController.m in Sources */,
+				0155C75A2A735D8F00170661 /* ZQSetupListActionManager.m in Sources */,
+				0155C74F2A735D8F00170661 /* ZQFamilyAccountModel.m in Sources */,
+				0155C74E2A735D8F00170661 /* HTFamilyViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0155C7172A735D6400170661 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0155C7182A735D6400170661 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0155C71C2A735D6800170661 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0155C71D2A735D6800170661 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0155C7222A735D6800170661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0155C7232A735D6800170661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0155C7252A735D6800170661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86E6D5A0C341D463B6E6DF7D /* Pods-HTSettingModule.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HTSettingModule/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WhiteWhaleTech.HTSettingModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0155C7262A735D6800170661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9968D1104CFF517EC47EAB13 /* Pods-HTSettingModule.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HTSettingModule/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WhiteWhaleTech.HTSettingModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0155C7062A735D6400170661 /* Build configuration list for PBXProject "HTSettingModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0155C7222A735D6800170661 /* Debug */,
+				0155C7232A735D6800170661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0155C7242A735D6800170661 /* Build configuration list for PBXNativeTarget "HTSettingModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0155C7252A735D6800170661 /* Debug */,
+				0155C7262A735D6800170661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0155C7032A735D6400170661 /* Project object */;
+}

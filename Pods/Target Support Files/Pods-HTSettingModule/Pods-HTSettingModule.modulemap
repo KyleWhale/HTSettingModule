@@ -1,0 +1,6 @@
+framework module Pods_HTSettingModule {
+  umbrella header "Pods-HTSettingModule-umbrella.h"
+
+  export *
+  module * { export * }
+}
